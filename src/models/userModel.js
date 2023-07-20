@@ -13,7 +13,7 @@ const userSchema = new mongoose.schema({
     },
     password:{ 
       type: string,
-      required: [true, "please provide a password
+      required: [true, "please provide a password"]
     }
     isverified:{
       type: boolean,
@@ -32,3 +32,6 @@ const User = mongoose.model.users || mongoose.model
 ("users", userSchema);
 
 export default User;
+
+
+//adeeing file in our database
