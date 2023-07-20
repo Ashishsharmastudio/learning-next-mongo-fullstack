@@ -1,4 +1,5 @@
-import mongoos from 'mongoos';
+import mongoose from 'mongoose';
+import mongoos from 'mongoose';
 
 export async function connect() {
     try {
