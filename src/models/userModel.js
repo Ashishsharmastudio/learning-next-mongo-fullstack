@@ -1,4 +1,5 @@
-import mongoos from "mongoose";
+import mongoose from "mongoose";
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.schema({
     username: {
@@ -8,15 +9,15 @@ const userSchema = new mongoose.schema({
     },
     email:{ 
          type: string,
-         required: [true, "please providea email"]
+         required: [true, "please providea email"],
          unique: true,
     },
     password:{ 
       type: string,
       required: [true, "please provide a password"]
-    }
-    isverified:{
-      type: boolean,
+    },
+    isVerfied: {
+      type: Boolean,
       default: false,
     },
     isAdmin:{ 
@@ -26,9 +27,11 @@ const userSchema = new mongoose.schema({
     forgotPasswordToken:{ string,
     forgotPasswordTokenExpiry: Date,
     VerifyToken: string,
-    VerifyTokenExpiry:Date,
-})
-const User = mongoose.model.users || mongoose.model
+    VerifyTokenExpiry: Date,
+});
+
+
+const User = mongoose.models.users || mongoose.model
 ("users", userSchema);
 
 export default User;

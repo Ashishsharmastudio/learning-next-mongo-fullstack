@@ -20,6 +20,7 @@
     "eslint-config-next": "13.4.10",
     "js": "^0.1.0",
     "jsonwebtoken": "^9.0.1",
+    "mailer": "^0.6.7",
     "mongoose": "^7.3.4",
     "next": "13.4.10",
     "nodemailer": "^6.9.3",
